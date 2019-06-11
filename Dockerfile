@@ -7,7 +7,6 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get install -
 	libvirt-bin \
 	nginx \
 	wget \
-	dumb-init \
 	&& apt-get clean
 	
 RUN wget https://github.com/kimchi-project/kimchi/releases/download/2.5.0/wok-2.5.0-0.noarch.deb && wget http://kimchi-project.github.io/gingerbase/downloads/latest/ginger-base.noarch.deb && wget https://github.com/kimchi-project/kimchi/releases/download/2.5.0/kimchi-2.5.0-0.noarch.deb
