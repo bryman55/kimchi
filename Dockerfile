@@ -12,23 +12,16 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get install -
 	&& apt-get clean
 	
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get install -y --no-install-recommends \
-	python-paramiko \
-	python-pil \
-	novnc \
-	python-libvirt \
-	python-ethtool \
-	python-ipaddr \
-	python-guestfs \
-	libguestfs-tools \
-	spice-html5 \
-	python-magic \
-	keyutils \
-	libnfsidmap2 \
-	libtirpc1 \
-	nfs-common \
-	rpcbind \
-	python-configobj \
-	python-parted \
+	python-cherrypy3 \
+	python-cheetah \
+	python-jsonschema \
+	gettext \
+	python-m2crypto \
+	python-pam \
+	python-lxml \
+	python-ldap \
+	python-psutil \
+	fonts-font-awesome \
 	&& apt-get clean
 	
 RUN wget https://github.com/kimchi-project/kimchi/releases/download/2.5.0/wok-2.5.0-0.noarch.deb && wget http://kimchi-project.github.io/gingerbase/downloads/latest/ginger-base.noarch.deb && wget https://github.com/kimchi-project/kimchi/releases/download/2.5.0/kimchi-2.5.0-0.noarch.deb
